@@ -182,6 +182,7 @@ helpers do
     PresentationHelper.published_schedule_events(dato.schedule_events)
   end
 
+<<<<<<< HEAD
   def current_and_past_events
     visible_schedule_events.reverse.select do |event|
       event.agenda_date <= DateTime.now
@@ -236,7 +237,7 @@ helpers do
     end
   end
 
-  def visible_news_contents
+  def visible_taggable_contents
     (visible_announcements +
     visible_articles +
     visible_interviews +
