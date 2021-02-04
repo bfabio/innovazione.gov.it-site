@@ -182,7 +182,6 @@ helpers do
     PresentationHelper.published_schedule_events(dato.schedule_events)
   end
 
-<<<<<<< HEAD
   def current_and_past_events
     visible_schedule_events.reverse.select do |event|
       event.agenda_date <= DateTime.now
@@ -557,8 +556,6 @@ dato.tap do |dato|
           locals: {page: dato.minister_page},
           locale: locale
 
-<<<<<<< HEAD
-=======
     proxy "/#{dato.schedule_archive_page.slug}/index.html",
           "/templates/archive.html",
           locals: {page: dato.schedule_archive_page},
@@ -569,7 +566,6 @@ dato.tap do |dato|
           locals: {page: dato.schedule_page},
           locale: locale
 
->>>>>>> Add helper methods and configuration for schedule archive page
     PresentationHelper.published_schedule_events(dato.schedule_events).each do |schedule_event|
       proxy "/#{dato.minister_page.slug}/#{dato.schedule_page.slug}/#{schedule_event.slug}/index.html",
             "/templates/schedule_event.html",
