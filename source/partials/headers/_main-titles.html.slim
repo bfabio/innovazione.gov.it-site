@@ -16,7 +16,7 @@
   .text-center.text-sm-left.pb-4 class=classes
     h1 class=big_title = page.title
     - if subtitle.present?
-      p.lead = subtitle
+      p.lead.mid-caption--lead = subtitle
     - if summary.present?
       .text-left.text-sm-left
         = markdown summary
