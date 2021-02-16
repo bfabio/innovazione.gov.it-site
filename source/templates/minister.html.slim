@@ -40,8 +40,9 @@
                 locals: {page: page}
 
 .pt-5.lightgrey-bg-a2
-  .container.px-0
-    = partial "partials/schedule"
+  - if page.show_schedule
+    .container.px-0
+      = partial "partials/schedule"
 .container.pt-3
   .pt-5.pb-4
     = partial "partials/section-title",
